@@ -1,0 +1,10 @@
+# Application properties
+spring:
+  datasource:
+    initialization-mode: always
+    data: testdata.sql
+  jpa:
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
+    show-sql: true
