@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    initialization-mode: always
+
+  h2:
+    console:
+      path: /h2-console
+      settings:
+        web-allow-others: true
+
+  jpa:
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+logging:
+  file:
+    name: "logs/logdata.log"
+
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "*"
