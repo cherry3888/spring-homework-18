@@ -1,6 +1,6 @@
 #ВАРИАНТ 1:
 FROM openjdk:11-jdk-slim
-COPY /target/spring-homework-17-0.0.1-SNAPSHOT.jar library.jar
+COPY /target/spring-homework-18-0.0.1-SNAPSHOT.jar library.jar
 CMD ["java", "-jar", "library.jar"]
 
 
@@ -23,7 +23,7 @@ CMD ["java", "-jar", "library.jar"]
 #RUN mkdir -p $PROJECT_DIR
 #WORKDIR $PROJECT_DIR
 #
-#COPY --from=0 $PROJECT_DIR/target/spring-homework-17-0.0.1-SNAPSHOT.jar $PROJECT_DIR
+#COPY --from=0 $PROJECT_DIR/target/spring-homework-18-0.0.1-SNAPSHOT.jar $PROJECT_DIR
 #
 #EXPOSE 8080
-#CMD ["java","-jar","/opt/project/spring-homework-17-0.0.1-SNAPSHOT.jar"]
+#CMD ["java","-jar","/opt/project/spring-homework-18-0.0.1-SNAPSHOT.jar"]
